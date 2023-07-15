@@ -1,0 +1,66 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background: #00000aec;
+  padding: 0;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+}
+.pdf-iframe {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+
+.pdf-iframe::-webkit-scrollbar {
+  width: 0 !important;
+  /* Masquer les barres de défilement */
+}
+
+.pdf-iframe::-webkit-pdf-toolbar {
+  display: none !important;
+  /* Masquer la barre d'outils */
+}
+
+nav {
+  background: #00000aec;
+}
+
+.section-h {
+  background-image: url("../image/dinner.webp");
+  background-position: center;
+}
+.bt {
+  outline: none;
+  border: none;
+  background-color: white;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+.cards {
+  height: 300px; /* Remplacez la valeur par celle souhaitée */
+}
+.cards img {
+  object-fit: cover; /* Permet de conserver les proportions tout en remplissant la zone de l'image */
+  height: 100%; /* Assurez-vous que l'image occupe toute la hauteur définie pour la carte */
+  width: 100%; /* Assurez-vous que l'image occupe toute la largeur définie pour la carte */
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    background: #07012560;
+    backdrop-filter: blur(10px);
+  }
+  #spx {
+    margin-top: 40px;
+  }
+}
